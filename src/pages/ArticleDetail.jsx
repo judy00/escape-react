@@ -50,13 +50,12 @@ function ArticleDetail() {
                   </div>
                 </div>
                 <div className="mb-3">
-                  <label htmlFor="isPublic" class="form-check-label">公開文章</label>
-                  <input class="form-check-input" type="checkbox" id="isPublic" value={state.isPublic} onChange={ handleChange }/>
-
-                </div>
-                <div className="mb-3">
                   <label htmlFor="content" className="form-label">文章內容</label>
                   <textarea className="form-control" id="content" value={state.content} onChange={ handleChange }/>
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="isPublic" class="form-check-label me-2">公開文章</label>
+                  <input class="form-check-input" type="checkbox" id="isPublic" checked={state.isPublic} onChange={ handleChange }/>
                 </div>
               </form>
             </div >
